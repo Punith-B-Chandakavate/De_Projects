@@ -283,7 +283,7 @@ Configuration:
 
 ### 📸 Screenshot
 
-![S3 Target](./screenshots/08-add-target-to-s3.png)
+![S3 Target](./screenshots/08-add-targeted-to-s3.png)
 
 ---
 
