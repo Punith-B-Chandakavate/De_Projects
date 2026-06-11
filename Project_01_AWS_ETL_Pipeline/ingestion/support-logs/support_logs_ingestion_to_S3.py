@@ -12,7 +12,7 @@ PROJECT_ROOT_DIR = os.path.dirname(
 
 sys.path.append(PROJECT_ROOT_DIR)
 
-from config import AWS_CONFIG, S3_BUCKET
+from config.config import AWS_CONFIG, S3_BUCKET
 
 # Source log files location
 SUPPORT_LOGS_SOURCE_DIR = os.path.join(
@@ -42,7 +42,9 @@ def read_last_date(file_path):
     """
     if os.path.exists(file_path):
         with open(file_path, 'r') as f:
-            return f.read().strip()
+            last_date = f.read().strip()
+            if last_date:
+                return last_date
     return "2025-06-30"
 
 

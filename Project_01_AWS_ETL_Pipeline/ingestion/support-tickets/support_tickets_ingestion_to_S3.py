@@ -13,10 +13,9 @@ PROJECT_ROOT_DIR = os.path.dirname(
         os.path.dirname(os.path.abspath(__file__))
     )
 )
-
 sys.path.append(PROJECT_ROOT_DIR)
 
-from config import AWS_CONFIG, S3_BUCKET, DB_CONFIG
+from config.config import AWS_CONFIG, S3_BUCKET, DB_CONFIG
 
 S3_PREFIX = "support-tickets/raw/"
 DATE_TRACKER_FILE = "date_tracker.txt"
