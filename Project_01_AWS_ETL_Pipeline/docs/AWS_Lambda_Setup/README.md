@@ -87,7 +87,7 @@ AWS Console → Lambda
 
 Click **Create Function**.
 
-![Create Lambda](./screenshorts/01-create-lambda.png)
+![Create Lambda](screenshots/01-create-lambda.png)
 
 ---
 
@@ -100,7 +100,7 @@ Configuration:
 
 Click **Create Function**.
 
-![Lambda Configuration](./screenshorts/02-create-lambda-function.png)
+![Lambda Configuration](screenshots/02-create-lambda-function.png)
 
 ---
 
@@ -108,7 +108,7 @@ Click **Create Function**.
 
 After creating the function, open the Lambda code editor.
 
-![Lambda Editor](./screenshorts/03-open-vscode-in-aws.png)
+![Lambda Editor](screenshots/03-open-vscode-in-aws.png)
 
 ---
 
@@ -125,7 +125,7 @@ Expected Output:
 }
 ```
 
-![Lambda Test](./screenshorts/04-test-lambda-function.png)
+![Lambda Test](screenshots/04-test-lambda-function.png)
 
 ---
 
@@ -149,7 +149,7 @@ def read_log_from_s3(bucket, key):
     return response['Body'].read().decode('utf-8')
 ```
 
-![Read Log File](./screenshorts/05-read-log-from-s3.png)
+![Read Log File](screenshots/05-read-log-from-s3.png)
 
 ---
 
@@ -165,7 +165,7 @@ IAM → Roles
 
 Open the Lambda execution role.
 
-![IAM Role](./screenshorts/06-lambda-role-permission.png)
+![IAM Role](screenshots/06-lambda-role-permission.png)
 
 ---
 
@@ -173,7 +173,7 @@ Open the Lambda execution role.
 
 Attach additional permissions to the Lambda execution role.
 
-![Add Permissions](./screenshorts/07-add-permissions.png)
+![Add Permissions](screenshots/07-add-permissions.png)
 
 ---
 
@@ -187,7 +187,7 @@ AmazonS3FullAccess
 
 to the Lambda role.
 
-![Attach S3 Policy](./screenshorts/08-attach-s3-policy.png)
+![Attach S3 Policy](screenshots/08-attach-s3-policy.png)
 
 ---
 
@@ -201,7 +201,7 @@ No module named 'pandas'
 
 This happens because Pandas is not included in the default Lambda runtime.
 
-![Import Error](./screenshorts/09-import-error.png)
+![Import Error](screenshots/09-import-error.png)
 
 ---
 
@@ -213,7 +213,7 @@ Navigate:
 Configuration → Layers → Edit
 ```
 
-![Edit Layer](./screenshorts/10-edit-layer.png)
+![Edit Layer](screenshots/10-edit-layer.png)
 
 Choose:
 
@@ -227,7 +227,7 @@ Version:
 
 Click **Add**.
 
-![Add Pandas Layer](./screenshorts/11-add-pandas-layer.png)
+![Add Pandas Layer](screenshots/11-add-pandas-layer.png)
 
 ---
 
@@ -241,7 +241,7 @@ Error:
 Task timed out after 3.00 seconds
 ```
 
-![Timeout Error](./screenshorts/12-timeout-error.png)
+![Timeout Error](screenshots/12-timeout-error.png)
 
 ---
 
@@ -260,7 +260,7 @@ Increase timeout:
 3 Seconds → 30 Seconds
 ```
 
-![Update Timeout](./screenshorts/13-update-timeout.png)
+![Update Timeout](screenshots/13-update-timeout.png)
 
 ---
 
@@ -277,7 +277,7 @@ Amazon S3
 
 Create a new event notification.
 
-![Create Event Notification](./screenshorts/14-create-event-notification.png)
+![Create Event Notification](screenshots/14-create-event-notification.png)
 
 ---
 
@@ -291,7 +291,7 @@ Configure:
 | Prefix     | support-logs/raw/         |
 | Suffix     | .log                      |
 
-![Create Event](./screenshorts/15-create-event-automate.png)
+![Create Event](screenshots/15-create-event-automate.png)
 
 ---
 
@@ -302,7 +302,7 @@ Select:
 * Object Creation
 * PUT Event
 
-![Event Type](./screenshorts/16-create-event.png)
+![Event Type](screenshots/16-create-event.png)
 
 ---
 
@@ -313,7 +313,7 @@ Choose:
 * Destination Type → Lambda Function
 * Function → support_log_ETL
 
-![Event Notification Config](./screenshorts/17-event-notification-config.png)
+![Event Notification Config](screenshots/17-event-notification-config.png)
 
 ---
 
@@ -321,7 +321,7 @@ Choose:
 
 Select the Lambda function as the event destination.
 
-![Select Lambda Function](./screenshorts/18-select-lambda-function.png)
+![Select Lambda Function](screenshots/18-select-lambda-function.png)
 
 ---
 
