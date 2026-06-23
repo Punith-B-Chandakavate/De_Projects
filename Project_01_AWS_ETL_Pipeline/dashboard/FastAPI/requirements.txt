@@ -1,0 +1,13 @@
+fastapi==0.138.0
+uvicorn[standard]==0.49.0
+python-dotenv==1.2.2
+pydantic==2.13.4
+jinja2==3.1.6
+boto3==1.43.36
+botocore==1.43.36
+typing-extensions==4.15.0
+annotated-types==0.7.0
+pydantic-core==2.46.4
+
+
+# python==3.13.2
