@@ -170,20 +170,11 @@ Project_01_AWS_ETL_Pipeline/
 │   │
 │   └── ../
 │
+├── glue/
+│   ├── glue_run_job.py
+│   └── lambda_glue_trigger.py
+│
 ├── ingestion/
-│   ├── glue/
-│   │   ├── glue_run_job.py
-│   │   └── lambda_glue_trigger.py
-│   │
-│   ├── lambda/
-│   │   └── ETL-support-log.py
-│   │
-│   ├── redshift/
-│   │   ├── lambda_redshift_trigger.py
-│   │   ├── table_creation_query.py
-│   │   ├── sql_query.sql
-│   │   └── table_schema/
-│   │
 │   ├── support-logs/
 │   │   ├── extract_data.py
 │   │   ├── support_logs_ingestion_to_S3.py
@@ -193,6 +184,15 @@ Project_01_AWS_ETL_Pipeline/
 │   └── support-tickets/
 │       ├── support_tickets_ingestion_to_S3.py
 │       └── date_tracker.txt
+│
+├── lambda/
+│   └── ETL-support-log.py
+│ 
+├── redshift/
+│   ├── lambda_redshift_trigger.py
+│   └── table_schema/
+│       ├── table_creation_query.py
+│       └── sql_query.sql
 │
 ├── .env
 ├── .gitignore
